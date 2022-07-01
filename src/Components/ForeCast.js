@@ -17,6 +17,7 @@ function ForeCast() {
     }
 
     const api_key = process.env.API_KEY;
+    console.log(api_key);
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`
 
     const getData = async () => {
