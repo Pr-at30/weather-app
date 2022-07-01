@@ -16,7 +16,7 @@ function ForeCast() {
       return setError(true);
     }
 
-    const api_key = process.env.REACT_APP_API_KEY;
+    const api_key = process.env.API_KEY;
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`
 
     const getData = async () => {
