@@ -16,23 +16,8 @@ function ForeCast() {
       return setError(true);
     }
 
-    const api_key = '82ed26d2aa7301a9416aa4cfb3e3df34';
+    const api_key = process.env.REACT_APP_API_KEY;
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`
-
-    // fetch(url)
-    //   .then(response => response.json())
-    //   .then(response => {
-    //     if (response.cod !== 200) {
-    //       throw new Error()
-    //     }
-    //     setWeatherData(response);
-    //     setError(false);
-    //     console.log("me running");
-    //   })
-    //   .catch(err => {
-    //     setError(true);
-    //     console.log(err.message);
-    //   });
 
     const getData = async () => {
       try {
@@ -79,3 +64,19 @@ function ForeCast() {
 }
 
 export default ForeCast;
+
+
+// fetch(url)
+//   .then(response => response.json())
+//   .then(response => {
+//     if (response.cod !== 200) {
+//       throw new Error()
+//     }
+//     setWeatherData(response);
+//     setError(false);
+//     console.log("me running");
+//   })
+//   .catch(err => {
+//     setError(true);
+//     console.log(err.message);
+//   });

@@ -4,7 +4,7 @@ import style from './Footer.module.css'
 const Footer = () => {
   return (
     <footer>
-      <small>Page created by Pratyush Jena</small>
+      <small>Page created by <strong>Pratyush Jena</strong> and <strong>Swapnil Sahoo</strong></small>
     </footer>
   )
 }
