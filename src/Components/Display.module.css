@@ -35,14 +35,14 @@ div.widget
 
 div.date
 {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
   color: rgba(0,0,0,0.5);
 }
 
 div.city
 {
-  font-size: 21px;
+  font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   padding-top: 5px;
@@ -51,10 +51,19 @@ div.city
 
 div.temp
 {
-  font-size: 81px;
+  font-size: 1.5rem;
   color: rgba(0,0,0,0.9);
   font-weight: 100;
 }
+
+div.desc
+{
+  font-size: 0.8rem;
+  color: rgba(0,0,0,0.5);
+  font-weight: 100;
+  padding-top: 5px;
+}
+
 
 div.panel
 {
